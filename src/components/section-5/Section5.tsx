@@ -48,11 +48,11 @@ const Section5Content = () => {
     return (
         <swiper-container
             ref={swiperContainerRef}
-            loop="true"
-            autoplay='{
+            loop={true}
+            autoplay={{
                 "delay": 3000,
                 "pauseOnMouseEnter": true
-            }'
+            }}
         >
             <swiper-slide>
                 <div className="w-full px-4 md:px-8 py-2 relative">
