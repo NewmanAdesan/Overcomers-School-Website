@@ -1,0 +1,9 @@
+
+
+.child {
+    transition: transform 500ms ease-out;
+}
+
+.parent:hover .child {
+    transform: translateY(-50%)
+}
