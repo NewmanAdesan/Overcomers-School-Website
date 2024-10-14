@@ -49,10 +49,10 @@ const Section5Content = () => {
         <swiper-container
             ref={swiperContainerRef}
             loop="true"
-            autoplay='{
-                "delay": 3000,
-                "pauseOnMouseEnter": true
-            }'
+            // autoplay='{
+            //     "delay": 3000,
+            //     "pauseOnMouseEnter": true
+            // }'
         >
             <swiper-slide>
                 <div className="w-full px-4 md:px-8 py-2 relative">
@@ -78,7 +78,7 @@ type TestimonyCardProps = {
 }
 const TestimonyCard = ({handleClick}: TestimonyCardProps) => {
     return (
-        <div className="w-full mx-auto space-y-2 max-w-[311px] md:w-4/5 md:max-w-[946px]">
+        <div className="w-full mx-auto space-y-2 max-w-[311px] md:w-4/5 md:max-w-[946px] pb-20">
                 <Title />
                 <Content handleClick={handleClick} />
         </div>

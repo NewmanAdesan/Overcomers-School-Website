@@ -1,0 +1,25 @@
+
+
+.mobileNav {
+    display: flex;
+    align-items: center;
+    height: 2.8rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    font-style: 16px;
+    border-radius: 12px;
+}
+
+.mobileNav:global(.active) {
+    background: rgba(64, 68, 167, 0.2);
+    margin-left: 0;
+}
+
+.mobileNav:global(.active)::before{
+    content: '';
+    width: 8px;
+    height: 100%;
+    background: rgb(64, 68, 167);
+    margin-right: calc(2rem - 8px);
+}

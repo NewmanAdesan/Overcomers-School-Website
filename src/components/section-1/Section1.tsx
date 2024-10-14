@@ -1,12 +1,14 @@
 import Header from "./Header"
 import HeroContent from "./HeroContent"
+import TheBackgroundSlide from "./TheBackgroundSlide"
 
 
 const Section1 = () => {
   return (
-    <div id="home-section" className=" w-screen h-screen min-h-[400px] max-h-[500px] md:min-h-[662px] md:max-h-[762px] bg-slate-800 relative">
+    <div id="home-section" className=" w-screen h-screen min-h-[400px] max-h-[500px] md:min-h-[662px] md:max-h-[762px] relative overflow-hidden">
         <Header />
         <HeroContent />
+        <TheBackgroundSlide />
     </div>
   )
 }

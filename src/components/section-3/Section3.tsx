@@ -31,9 +31,29 @@ function Content1() {
 function Content2() {
     return(
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <figure className="">
-                <img src="/about-us-img.png" alt="" className="w-full" />
-            </figure>
+            <div>
+                <swiper-container 
+                    loop="true" 
+                    autoplay='{
+                        "delay": 3000
+                    }'
+                    effect="fade"
+                    fade-effect='{
+                        "crossFade": true
+                    }'
+                    speed="3000"
+                >
+                    {
+                        ["about-us-img.png", "section-2-image-2.png"].map((item, index) => (
+                            <swiper-slide>
+                                <figure key={index}>
+                                    <img src={`/${item}`} alt="" className="w-full" />
+                                </figure>
+                            </swiper-slide>
+                        ))
+                    }
+                </swiper-container>
+            </div>
             <div>
                 <div className="hidden md:block ">
                     <AboutUsComponent1 />
