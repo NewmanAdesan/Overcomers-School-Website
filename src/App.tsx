@@ -1,5 +1,6 @@
 import Section1 from "./components/section-1/Section1";
 import Section10 from "./components/section-10/Section10";
+import Section11 from "./components/section-11/Section11";
 import Section2 from "./components/section-2/Section2";
 import Section3 from "./components/section-3/Section3";
 import Section4 from "./components/section-4/Section4";
@@ -16,18 +17,19 @@ function App() {
 
   return (
     <>
-      <Section1 />
-      <Section2 />
+      <Section1 />    {/* Banner Section */}
+      <Section2 />    {/* Latest News Section */}
       <div className="mb-6 md:mb-12">
-        <Section3 />
+        <Section3 />  {/* About Us Section */}
       </div>
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Section9 />
-      <Section10 />
+      <Section4 />    {/* Our Programs Section */}
+      <Section5 />    {/* Testimonial Section */}
+      <Section6 />    {/* Beyond The Classroom Section */}
+      <Section7 />    {/* Admission Information Section */}
+      <Section8 />    {/* Our Educators Section */}
+      <Section9 />    {/* Contact Section */}
+      <Section10 />   {/* Shkula Advertisement */}
+      <Section11 />
     </>
   )
 

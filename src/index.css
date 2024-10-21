@@ -93,7 +93,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
   }
   .mycontainer1 {
     @apply container w-full max-w-xl md:max-w-7xl px-4 md:px-8 mx-auto
@@ -194,5 +194,3 @@
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background-color: #5742c1; /* Darker shade on hover */
 }
-
-

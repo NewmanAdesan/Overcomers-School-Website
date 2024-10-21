@@ -2,6 +2,7 @@ import { ReactNode } from "react"
 import SpacingContainer from "../ui/SpacingContainer"
 import { Button } from "../ui/button"
 import Banner1 from "../ui/Banner1"
+import { admissionsSectionIntro, howToApplySectionContent } from "@/data"
 
 const bannerContent = (
     <span>
@@ -13,7 +14,7 @@ const bannerContent = (
 
 const Section7 = () => {
   return (
-    <section>
+    <section id="admission-information-section">
         <Banner1 content={bannerContent} />
         <div className="mycontainer1">
             <Content />
@@ -35,7 +36,7 @@ function Content() {
                     <Heading3>ADMISSIONS</Heading3>
                 </SpacingContainer>
                 <Paragraph>
-                    Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
+                    {admissionsSectionIntro}
                 </Paragraph>
             </SpacingContainer>
 
@@ -44,15 +45,16 @@ function Content() {
                     <Heading3 type="B">HOW TO APPLY</Heading3>
                 </SpacingContainer>
                 <SpacingContainer className="space-y-3 md:space-y-2">
-                    <Paragraph>
-                        Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
-                    </Paragraph>
-                    <Paragraph>
-                        Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
-                    </Paragraph>
-                    <Paragraph>
-                        Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl.
-                    </Paragraph>
+                    {
+                        howToApplySectionContent.map(
+                            (item, index) => (
+                                <Paragraph key={index}>
+                                    {item}
+                                </Paragraph>
+
+                            )
+                        )
+                    }
                 </SpacingContainer>
             </SpacingContainer>
 

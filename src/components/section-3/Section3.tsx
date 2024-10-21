@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Icon1 } from "../ui/icons/Icon1"
 import { Line } from "../ui/icons/Line"
+import { aboutUsComponent2Data, aboutUsImages, schoolOverview } from "@/data.tsx"
 
 
 const Section3 = () => {
@@ -44,7 +45,7 @@ function Content2() {
                     speed="3000"
                 >
                     {
-                        ["about-us-img.png", "section-2-image-2.png"].map((item, index) => (
+                        aboutUsImages.map((item, index) => (
                             <swiper-slide>
                                 <figure key={index}>
                                     <img src={`/${item}`} alt="" className="w-full" />
@@ -69,9 +70,6 @@ function Content2() {
 
 
 
-
-const schoolOverview = "Korem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis condimentum lobortis. Ut commodo efficitur neque. Ut diam quam, semper iaculis condimentum ac, vestibulum eu nisl."
-
 function AboutUsComponent1() {
     return (
         <div className="flex flex-col">
@@ -90,45 +88,45 @@ function AboutUsComponent1() {
 
 
 
-const aboutUsComponent2Data = [
-    {
-        value: "mission",
-        label: "Misson",
-        content: <>
-            <p>
-                At [School Name], our mission is to nurture a diverse and inclusive learning environment where every student is empowered to achieve their full potential. We are committed to fostering curiosity, critical thinking, and a passion for lifelong learning through innovative teaching methods, personalized support, and a holistic approach to education.
-            </p>
-            <p>
-                At [School Name], our mission is to nurture a diverse and inclusive learning environment where every student is empowered to achieve their full potential. We are committed to fostering curiosity, critical thinking, and a passion for lifelong learning through innovative teaching methods, personalized support, and a holistic approach to education.
-            </p>
-        </>
-    },
-    {
-        value: "vision",
-        label: "Vison",
-        content: <>
-            <p>
-            Our vision is to become a leading educational institution that inspires and prepares students to be confident, compassionate, and responsible global citizens. We aim to cultivate future leaders who are not only academically proficient but also ethically grounded and equipped to make a positive impact in their communities and the world.
-            </p>
-            <p>
-            Our vision is to become a leading educational institution that inspires and prepares students to be confident, compassionate, and responsible global citizens. We aim to cultivate future leaders who are not only academically proficient but also ethically grounded and equipped to make a positive impact in their communities and the world.
-            </p>
-        </>
-    },
-    {
-        value: "core-values",
-        label: "Core Values",
-        content: <>
-            <p>
-            <span style={{fontWeight: 700}} >Excellence:</span> We strive for academic excellence by fostering a culture of continuous improvement, innovation, and critical thinking. We believe in setting high standards and providing the resources and support needed to achieve them.
-            </p>
-            <p>
-            <span style={{fontWeight: 700}} >Excellence:</span> We strive for academic excellence by fostering a culture of continuous improvement, innovation, and critical thinking. We believe in setting high standards and providing the resources and support needed to achieve them.
-            </p>
-        </>
-    },
+// const aboutUsComponent2Data = [
+//     {
+//         value: "mission",
+//         label: "Misson",
+//         content: <>
+//             <p>
+//                 At [School Name], our mission is to nurture a diverse and inclusive learning environment where every student is empowered to achieve their full potential. We are committed to fostering curiosity, critical thinking, and a passion for lifelong learning through innovative teaching methods, personalized support, and a holistic approach to education.
+//             </p>
+//             <p>
+//                 At [School Name], our mission is to nurture a diverse and inclusive learning environment where every student is empowered to achieve their full potential. We are committed to fostering curiosity, critical thinking, and a passion for lifelong learning through innovative teaching methods, personalized support, and a holistic approach to education.
+//             </p>
+//         </>
+//     },
+//     {
+//         value: "vision",
+//         label: "Vison",
+//         content: <>
+//             <p>
+//             Our vision is to become a leading educational institution that inspires and prepares students to be confident, compassionate, and responsible global citizens. We aim to cultivate future leaders who are not only academically proficient but also ethically grounded and equipped to make a positive impact in their communities and the world.
+//             </p>
+//             <p>
+//             Our vision is to become a leading educational institution that inspires and prepares students to be confident, compassionate, and responsible global citizens. We aim to cultivate future leaders who are not only academically proficient but also ethically grounded and equipped to make a positive impact in their communities and the world.
+//             </p>
+//         </>
+//     },
+//     {
+//         value: "core-values",
+//         label: "Core Values",
+//         content: <>
+//             <p>
+//             <span style={{fontWeight: 700}} >Excellence:</span> We strive for academic excellence by fostering a culture of continuous improvement, innovation, and critical thinking. We believe in setting high standards and providing the resources and support needed to achieve them.
+//             </p>
+//             <p>
+//             <span style={{fontWeight: 700}} >Excellence:</span> We strive for academic excellence by fostering a culture of continuous improvement, innovation, and critical thinking. We believe in setting high standards and providing the resources and support needed to achieve them.
+//             </p>
+//         </>
+//     },
 
-]
+// ]
 
 function AboutUsComponent2() {
     const [activeContent, setActiveContent] = useState("mission")

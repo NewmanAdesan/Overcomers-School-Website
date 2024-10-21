@@ -4,8 +4,8 @@ import Section6Content from "./Section6Content"
 
 const Section6 = () => {
   return (
-    <section id="contact-section" className="mycontainer1 pt-4 sm:pt-8 md:pt-12">
-        <SpacingContainer className="mb-12 md:mb-16">
+    <section id="beyond-the-classroom-section" className="mycontainer1 pt-4 pb-8 sm:pt-8 md:pt-1 lg:pb-0">
+        <SpacingContainer className="mb-12 md:mb-24 lg:mb-16">
             <TheHeader />
         </SpacingContainer>
         <Section6Content />

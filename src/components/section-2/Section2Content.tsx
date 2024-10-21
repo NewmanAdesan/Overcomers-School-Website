@@ -1,3 +1,4 @@
+import { certifiedTeachers, numberOfSchools, schoolName, yearsOld } from "@/data.tsx"
 import { Button } from "../ui/button"
 
 const Section2Content = () => {
@@ -24,7 +25,7 @@ const Section2Content = () => {
                     <path d="M14.5986 1.35333V16.6466H2.08594V1.35333H14.5986ZM9.03744 2.74363V7.26211L6.95199 5.69802L4.86654 7.26211V2.74363H3.47624V15.2563H13.2083V2.74363H9.03744ZM6.25684 2.74363V4.48151L6.95199 3.96015L7.64714 4.48151V2.74363H6.25684ZM4.86654 8.99998H11.818V10.3903H4.86654V8.99998ZM4.86654 11.7806H10.4277V13.1709H4.86654V11.7806Z" fill="#4044A7"/>
                 </svg>
                 <div className="flex flex-col">
-                    <span className="montserrat font-bold text-16-auto lg:text-20px xl:text-32-auto text-schoolcom">160+</span>
+                    <span className="montserrat font-bold text-16-auto lg:text-20px xl:text-32-auto text-schoolcom">{certifiedTeachers}</span>
                     <span className="open-sans font-normal text-10-auto md2:text-12px lg:text-14px xl:text-16-opensans-auto">Certified Teachers</span>
                 </div>
             </div>
@@ -41,7 +42,7 @@ const Section2Content = () => {
                 </svg>
 
                 <div className="flex flex-col">
-                    <span className="montserrat font-bold text-16-auto lg:text-20px xl:text-32-auto text-schoolcom">2</span>
+                    <span className="montserrat font-bold text-16-auto lg:text-20px xl:text-32-auto text-schoolcom">{yearsOld}</span>
                     <span className="open-sans font-normal text-10-auto md2:text-12px lg:text-14px xl:text-16-opensans-auto">Years Old</span>
                 </div>
             </div>
@@ -51,7 +52,7 @@ const Section2Content = () => {
                 </svg>
 
                 <div className="flex flex-col">
-                    <span className="montserrat font-bold text-16-auto lg:text-20px xl:text-32-auto text-schoolcom">2</span>
+                    <span className="montserrat font-bold text-16-auto lg:text-20px xl:text-32-auto text-schoolcom">{numberOfSchools}</span>
                     <span className="open-sans font-normal text-10-auto md2:text-12px lg:text-14px xl:text-16-opensans-auto">School</span>
                 </div>
             </div>
@@ -90,7 +91,7 @@ function Content() {
             {/* section-2-content information */}
             <div className="text-center md:text-start md:self-center md:pt-6 md:pb-[51px] mx-auto">
                 <h2 className="text-white font-bold text-24px lg:text-40px">Apply for <span className="text-shkula-secondary">Admission</span></h2>
-                <p className="montserrat font-normal text-12px md:text-20px lg:text-24px mb-3.5 md:mb-8 lg:mb-11 text-white">Admission into [School Name] for 2024/2025 session is in progress</p>
+                <p className="montserrat font-normal text-12px md:text-20px lg:text-24px mb-3.5 md:mb-8 lg:mb-11 text-white">Admission into {schoolName} for 2024/2025 session is in progress</p>
                 <div className="max-w-max mx-auto md:mx-0 flex flex-col md:flex-row items-center gap-3 md:gap-4 md2:gap-6 open-sans font-semibold text-xs md2:text-sm leading-[8px] md:leading-4 transition-all duration-500">
                     {/* button-1 */}
                     <Button className="w-48 h-[30px] md:w-[212px] md2:w-[256px] md:h-14 lg:w-[312px] flex-center-center rounded-2xl md:rounded-32px bg-shkula-secondary md:bg-shkula-primary md:border md:border-white text-schoolcom md:text-white transition-all duration-500 hover:bg-white hover:text-shkula-secondary">Download Application Form</Button>

@@ -1,20 +1,29 @@
 
 
 .grid-container {
-    @apply grid grid-cols-1 gap-5 sm:gap-6 max-w-full
+    @apply grid grid-cols-1 gap-5 sm:gap-6 sm:grid-cols-2 max-w-full
 }
 
 .grid-item {
-    @apply w-full max-w-[238px] justify-self-center aspect-[148/231] bg-slate-500 rounded-[20px] shadow-blur overflow-hidden
+    @apply rounded-t-[20px] rounded-b-[20px] flex flex-col gap-0 w-full max-w-[238px] justify-self-center shadow-blur overflow-hidden transition-all duration-500
+}
+
+.grid-figure {
+    @apply w-full bg-gray-400 min-h-[60%] max-h-full transition-all duration-500 overflow-hidden
+    
+}
+
+.grid-content-1 {
+    @apply w-full bg-white h-[50%] flex justify-center items-center px-3  transition-all duration-500 overflow-hidden
 }
 
 
 
-@media (min-width: 375px) {
+/* @media (min-width: 500px) {
     .grid-container {
         @apply grid-cols-2
     }
-}
+} */
 
 @media (min-width: 768px) {
     .grid-container {

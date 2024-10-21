@@ -4,13 +4,15 @@ import Section8Content from "./Section8Content"
 
 const Section8 = () => {
   return (
-    <section className="mycontainer1 py-5 sm:pt-6 sm:pb-10 md:pb-12">
-        <SpacingContainer className="mb-5 md:mb-9">
-            <Heading2 title="Meet Our Educators" />
-        </SpacingContainer>
-        <SpacingContainer className="mb-5 md:mb-0">
-            <Section8Content />
-        </SpacingContainer>
+    <section id="our-educators-section bg-white-1">
+        <div className="mycontainer1 py-5 sm:pt-6 sm:pb-10 md:pb-12">
+          <SpacingContainer className="mb-5 md:mb-9">
+              <Heading2 title="Meet Our Educators" />
+          </SpacingContainer>
+          <SpacingContainer className="mb-5 md:mb-0">
+              <Section8Content />
+          </SpacingContainer>
+        </div>
     </section>
   )
 }

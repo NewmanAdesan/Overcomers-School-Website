@@ -1,12 +1,5 @@
+import { bannerImages } from "@/data.tsx"
 
-
-const bannerImages = [
-    'section-6-img-10.jpeg',
-    'section-6-img-9.jpeg',
-    'section-6-img-7.jpeg',
-    'section-6-img-6.jpeg',
-    'section-6-img-11.jpeg',
-]
 
 const TheBackgroundSlide = () => {
   return (
@@ -21,6 +14,7 @@ const TheBackgroundSlide = () => {
                 "crossFade": true
             }'
             speed="3000"
+            style={{height: "100%"}}
         >
             {
                 bannerImages.map((item, index) => (
@@ -41,7 +35,7 @@ const Slide = ({image}: {image: string}) => {
     return (
         <figure className="w-full h-full relative">
             <img src={`/${image}`} alt="" className="w-full h-full object-cover object-center" loading="lazy" />
-            <div className="absolute inset-0 bg-black/70"></div>
+            <div className="absolute inset-0 bg-black/60"></div>
         </figure>
     )
 }

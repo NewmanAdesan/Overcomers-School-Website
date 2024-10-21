@@ -1,10 +1,11 @@
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import styles from './Section5.module.css'
 import { useRef } from 'react';
+import { testimonies } from '@/data';
 
 const Section5 = () => {
   return (
-    <section id='testimonial-section' className="py-5 md:pt-8 md:pb-0 container w-full max-w-xl md:max-w-7xl mx-auto relative max-h-[470px] aspect-[20/17] md:max-h-[700px] md:aspect-[885/478] mb-6 xxxs:mb-0">
+    <section id='testimonials-section' className="py-5 md:pt-8 md:pb-0 container w-full max-w-xl md:max-w-7xl mx-auto relative max-h-[470px] aspect-[20/17] md:max-h-[700px] md:aspect-[885/478] mb-6 xxxs:mb-0">
         {/* background */}
         <Section5Background />
 
@@ -54,33 +55,32 @@ const Section5Content = () => {
             //     "pauseOnMouseEnter": true
             // }'
         >
-            <swiper-slide>
-                <div className="w-full px-4 md:px-8 py-2 relative">
-                    <TestimonyCard handleClick={handleClick} />
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div className="w-full px-4 md:px-8 relative">
-                    <TestimonyCard handleClick={handleClick} />
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div className="w-full px-4 md:px-8 relative">
-                    <TestimonyCard handleClick={handleClick} />
-                </div>
-            </swiper-slide>
+            {
+                testimonies.map(
+                    (item, index) => (
+                        <swiper-slide key={index}>
+                            <div className="w-full px-4 md:px-8 py-2 relative">
+                                <TestimonyCard handleClick={handleClick} testimony={item.testimony} testifierName={item.testifierName} testifierRole={item.testifierRole} />
+                            </div>
+                        </swiper-slide>
+                    )
+                )
+            }
         </swiper-container>
     )
 }
 
 type TestimonyCardProps = {
-    handleClick: (buttonType:"left"|"right") => void
+    handleClick: (buttonType:"left"|"right") => void,
+    testimony: string,
+    testifierName: string,
+    testifierRole: string,
 }
-const TestimonyCard = ({handleClick}: TestimonyCardProps) => {
+const TestimonyCard = ({handleClick, testimony, testifierName, testifierRole}: TestimonyCardProps) => {
     return (
         <div className="w-full mx-auto space-y-2 max-w-[311px] md:w-4/5 md:max-w-[946px] pb-20">
                 <Title />
-                <Content handleClick={handleClick} />
+                <Content handleClick={handleClick} testimony={testimony} testifierName={testifierName} testifierRole={testifierRole} />
         </div>
     )
 }
@@ -96,33 +96,36 @@ const Title = () => {
 
 
 type ContentProps = {
-    handleClick: (buttonType:"left"|"right") => void
+    handleClick: (buttonType:"left"|"right") => void,
+    testimony: string,
+    testifierName: string,
+    testifierRole: string,
 }
-const Content = ({handleClick}: ContentProps) => {
+const Content = ({handleClick, testimony, testifierName, testifierRole}: ContentProps) => {
     return (
         <article className="w-[calc(100%-16px)] bg-[#FAFAFA] rounded-lg shadow-[0px_28px_59px_0px_rgba(21,21,21,0.15)] p-3 pb-8 flex flex-col xxxs:flex-row gap-5 md:gap-14 relative md:pr-9 md:pt-8 md3:pt-11 md:pl-12 md3:pl-16 md:pb-16 md3:pb-10">
             <div className="md:w-[calc(50%-28px)]">
                 <span className="block open-sans text-[10px] md:text-[18px] lg:text-[22px] leading-[166.6%] text-black">
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    {testimony}
                 </span>
                 <ApostropheSVG />
                 <span className='hidden md:flex flex-col gap-1 mb-5 md3:mb-0'>
-                    <span className='open-sans md:text-[24px] lg:text-[29px] leading-[137%] text-black'>Oladayo Deborah</span>
-                    <span className='open-sans text-12-raleway-auto text-[#808080]'>Primary 6 Student</span>
+                    <span className='open-sans md:text-[24px] lg:text-[29px] leading-[137%] text-black'>{testifierName}</span>
+                    <span className='open-sans text-12-raleway-auto text-[#808080]'>{testifierRole}</span>
                 </span>
             </div>
 
             <div className="flex md:opacity-0 flex-col flex-shrink-0 items-center text-center relative -top-8">
-                <figure className="rounded-lg overflow-hidden relative w-full max-w-36 aspect-[125/187]">
-                    <img src="/section-5-img-1.jpeg" alt="" className="w-full h-full object-cover object-center" loading='lazy' />
+                <figure className="rounded-lg overflow-hidden relative w-full max-w-36 aspect-[125/187] bg-black/50">
+                    {/* <img src="/section-5-img-1.jpeg" alt="" className="w-full h-full object-cover object-center" loading='lazy' /> */}
                     <div className="absolute inset-0 bg-[rgba(62,102,223,0.2)]"></div>
                 </figure>
                 <span className="w-full line-clamp-1 open-sans font-semibold text-xs md:text-lg text-black">Oladayo Deborah</span>
                 <span className="w-full line-clamp-1 open-sans text-10-auto text-[#808080]">Primary 6 Student</span>
             </div>
 
-            <figure className='hidden md:block absolute md:-top-[60px] md3:-top-[100px] right-9 w-[calc(45%-28px)] aspect-[127/190] rounded-3xl overflow-hidden'>
-                <img src="/section-5-img-1.jpeg" alt="" className="w-full h-full object-cover object-center" loading='lazy' />
+            <figure className='hidden md:block absolute md:-top-[60px] md3:-top-[100px] right-9 w-[calc(45%-28px)] aspect-[127/190] rounded-3xl overflow-hidden bg-black/50'>
+                {/* <img src="/section-5-img-1.jpeg" alt="" className="w-full h-full object-cover object-center" loading='lazy' /> */}
                 <div className="absolute inset-0 bg-[rgba(62,102,223,0.2)]"></div>
             </figure>
 
@@ -148,5 +151,3 @@ const ApostropheSVG = () => {
         </svg>
     )
 }
-
-

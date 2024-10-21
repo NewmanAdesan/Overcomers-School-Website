@@ -1,47 +1,7 @@
 import { ArrowRight } from "lucide-react"
 import { Button } from "../ui/button"
+import { d1, data1, data2 } from "@/data"
 
-
-type d1 = {
-    title: string,
-    image: string,
-    description: string
-}
-const data1: d1[] = [
-    {
-        title: "Elementary School",
-        image: "/programs-A-img-1.png",
-        description: "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
-    },
-    {
-        title: "Middle School",
-        image: "/programs-A-img-2.png",
-        description: "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
-    },
-    {
-        title: "High School",
-        image: "/programs-A-img-3.png",
-        description: "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
-    }
-]
-
-const data2: d1[] = [
-    {
-        title: "STEM",
-        image: "/programs-B-img-1.png",
-        description: "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
-    },
-    {
-        title: "Arts",
-        image: "/programs-B-img-2.png",
-        description: "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
-    },
-    {
-        title: "Sports",
-        image: "/programs-B-img-3.png",
-        description: "Dorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis."
-    }
-]
 
 const Section4 = () => {
   return (
@@ -104,10 +64,12 @@ function ProgramCard({title, description, image, showCTA, className}: ProgramCar
                 {
                     showCTA
                     &&
-                    <Button className="py-2.5 px-5 flex gap-1 items-center rounded-32px bg-[#2E4289] text-white open-sans font-semibold text-xs md:py-5 md:px-[52px] md:text-14-auto w-max">
-                        <span>Apply Now</span>
-                        <ArrowRight size={14} />
-                    </Button>
+                    <a href="#contact-section">
+                        <Button className="py-2.5 px-5 flex gap-1 items-center rounded-32px bg-[#2E4289] text-white open-sans font-semibold text-xs md:py-5 md:px-[52px] md:text-14-auto w-max">
+                            <span>Apply Now</span>
+                            <ArrowRight size={14} />
+                        </Button>
+                    </a>
                 } 
             </div>
         </div>

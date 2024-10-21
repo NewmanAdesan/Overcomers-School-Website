@@ -1,0 +1,22 @@
+
+
+@media screen and (min-width: 768px) {
+    .descText {
+        height: 0px;
+        opacity: 0;
+    }
+
+    .descContainer, .descText {
+        transition: all 300ms;
+    }
+    
+    .cardUiParent:hover .descContainer {
+        height: 200px;
+    }
+    
+    .cardUiParent:hover .descText {
+        height: auto;
+        opacity: 1;
+    }
+    
+}

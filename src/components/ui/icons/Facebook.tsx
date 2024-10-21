@@ -1,8 +1,11 @@
 import { SVGProps } from "react"
 
 
+interface FacebookProps extends SVGProps<SVGSVGElement> {
+  primaryFill?: string;
+}
 
-const Facebook = (props: SVGProps<SVGSVGElement>) => (
+const Facebook = ({ primaryFill = "#4044A7", ...props }: FacebookProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 25 24"
@@ -11,7 +14,7 @@ const Facebook = (props: SVGProps<SVGSVGElement>) => (
     >
       <g clipPath="url(#a)">
         <path
-          fill="#4044A7"
+          fill={primaryFill}
           d="M24.5 12c0-6.627-5.373-12-12-12S.5 5.373.5 12c0 5.99 4.388 10.954 10.125 11.854V15.47H7.578V12h3.047V9.356c0-3.007 1.792-4.668 4.533-4.668 1.312 0 2.686.234 2.686.234v2.953H16.33c-1.491 0-1.956.925-1.956 1.875V12h3.328l-.532 3.469h-2.796v8.385C20.112 22.954 24.5 17.99 24.5 12Z"
         />
         <path

@@ -119,6 +119,7 @@ export default {
 		'schoolcom': '#313131',
 		'gray-1': 'rgba(232, 232, 232, 50%)',
 		'gray-2': '#333333',
+		'dark-1': '#101828',
 		'white-1': '#f3f3f3'
 		},
   	}

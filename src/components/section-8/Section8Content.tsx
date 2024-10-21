@@ -1,7 +1,7 @@
 
-import Facebook from "../ui/icons/Facebook"
-import LinkedIn from "../ui/icons/LinkedIn"
-import Twitter from "../ui/icons/Twitter"
+import Facebook from "../ui/icons/Facebook";
+import LinkedIn from "../ui/icons/LinkedIn";
+import Twitter from "../ui/icons/Twitter";
 import styles from "./Section8Content.module.css"
 
 
@@ -9,22 +9,22 @@ const data = [
     {
       name: "Tomiwa Adebowale",
       role: "Primary 1 Class Teacher",
-      image: "section-8-img-2.png"
+      image: "section-8-img-2.webp"
     },
     {
       name: "Temiloluwa Olatunbosu",
       role: "Mathematics Teacher",
-      image: "section-8-img-5.jpeg"
+      image: "section-8-img-5.webp"
     },
     {
       name: "Chidinma Nwachukwu",
       role: "English Teacher",
-      image: "section-8-img-6.jpeg"
+      image: "section-8-img-2.webp"
     },
     {
       name: "Ayodele Ogunmola",
       role: "Primary 3 Class Teacher",
-      image: "section-8-img-7.jpeg"
+      image: "section-8-img-5.webp"
     },
     // {
     //   name: "Kelechi Okafor",
@@ -72,14 +72,14 @@ type GridItemProps = {
 }
 
 function GridItem({name, role, image, extraStyle}: GridItemProps) {
-    return <div  className={`${styles['grid-item']} flex flex-col gap-0 ${extraStyle}`}>
-        <figure className="w-full bg-gray-400 min-h-[64%] max-h-full lg:col">
-            <img src={`/${image}`} alt="" className="w-full h-full object-cover object-fit" />
+    return <div  className={`${styles['grid-item']} ${extraStyle}`}>
+        <figure className={`${styles['grid-figure']}`}>
+            <img src={`/${image}`} alt="" className="w-full h-full object-cover object-center" />
         </figure>
-        <div className="w-full bg-white h-[36%] flex justify-center items-center px-3">
-            <div className="flex flex-col gap-1.5 sm:gap-2.5 items-center">
-                <h4 className="text-shkula-primary montserrat text-14-monteserrat-auto font-bold tracking-[0.1px] line-clamp-1 sm:text-base">{name}</h4>
-                <p className="text-schoolcom montserrat text-10-monteserrat-auto font-normal tracking-[0.2px] line-clamp-1 sm:text-xs">{role}</p>
+        <div className={` ${styles['grid-content-1']}`}>
+            <div className="flex flex-col gap-1.5 sm:gap-2.5 items-center overflow-hidden">
+                <h4 className="text-shkula-primary montserrat text-14-monteserrat-auto font-bold tracking-[0.1px] sm:text-base">{name}</h4>
+                <p className="text-schoolcom montserrat text-10-monteserrat-auto font-normal tracking-[0.2px] sm:text-xs mb-1 sm:mb-0">{role}</p>
                 <div className="flex w-max gap-5 items-center">
                     <Facebook className="size-4 sm:size-6" />
                     <LinkedIn className="size-4 sm:size-6" />
