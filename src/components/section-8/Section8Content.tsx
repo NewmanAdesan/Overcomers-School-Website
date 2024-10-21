@@ -19,12 +19,12 @@ const data = [
     {
       name: "Chidinma Nwachukwu",
       role: "English Teacher",
-      image: "section-8-img-2.webp"
+      image: "educator3.webp"
     },
     {
       name: "Ayodele Ogunmola",
       role: "Primary 3 Class Teacher",
-      image: "section-8-img-5.webp"
+      image: "educator4.webp"
     },
     // {
     //   name: "Kelechi Okafor",
