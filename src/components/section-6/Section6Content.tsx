@@ -47,7 +47,7 @@ function CardUI({title, desc, image}: CardUIProps) {
         </figure>
         <div className={` ${styles['descContainer']} bg-white absolute bottom-0 w-full h-[167px] lg:h-[112px] rounded-[10px] px-2.5 flex items-center justify-center`}>
             <div className="flex flex-col gap-[5px] text-center">
-                <h3 className="line-clamp-1 poppins text-24-auto-2 text-shkula-primary font-semibold">{title}</h3>
+                <h3 className=" poppins text-24-auto-2 text-shkula-primary font-semibold">{title}</h3>
                 <span className={` ${styles['descText']} line-clamp-5 open-sans text-black font-regular text-12-auto-2 lg:opacity-0`}>{desc}</span>
             </div>
         </div>

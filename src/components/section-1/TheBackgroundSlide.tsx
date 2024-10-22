@@ -3,7 +3,7 @@ import { bannerImages } from "@/data.tsx"
 
 const TheBackgroundSlide = () => {
   return (
-    <div className="w-full max-w-screen-2xl mx-auto bg-slate-800 absolute top-0 h-full -z-10">
+    <div className="w-full max-w-[1600px] bg-slate-800 absolute top-0 left-1/2 -translate-x-1/2 h-full -z-10">
         <swiper-container 
             loop="true" 
             autoplay='{
@@ -27,7 +27,6 @@ const TheBackgroundSlide = () => {
     </div>
   )
 }
-
 export default TheBackgroundSlide
 
 

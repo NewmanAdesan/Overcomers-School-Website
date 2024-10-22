@@ -1,13 +1,16 @@
 import { ArrowRight } from "lucide-react"
 import { Button } from "../ui/button"
 import { d1, data1, data2 } from "@/data"
+import SpacingContainer from "../ui/SpacingContainer"
 
 
 const Section4 = () => {
   return (
-    <section id="programs-section" className="mycontainer1 py-3 md:py-8 md2:py-12 space-y-6 md:space-y-10 bg-white-1">
-        <ProgramCards name="Our Academic Programs" showCTA={true} data={data1} />
-        <ProgramCards name="Our special Programs" showCTA={false} data={data2} />
+    <section id="programs-section" className="w-full max-w-[1600px] mx-auto bg-white-1">
+        <SpacingContainer className="mycontainer1 py-3 md:py-8 md2:py-12 space-y-6 md:space-y-10">
+            <ProgramCards name="Our Academic Programs" showCTA={true} data={data1} />
+            <ProgramCards name="Our special Programs" showCTA={false} data={data2} />
+        </SpacingContainer>
     </section>
   )
 }

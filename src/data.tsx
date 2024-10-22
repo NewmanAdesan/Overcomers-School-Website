@@ -16,6 +16,46 @@ export const schoolSocialMediaLinks = {
 export const certifiedTeachers = '50+'
 export const yearsOld = '12'
 export const numberOfSchools = '6'
+export const latestNewsSectionImage = 'OC-banner-image-5.webp' // section-2-image.png
+
+export const schoolOverviewInParagraphs = <>
+    <p>
+        <span>
+            The school commenced operation on 7th of September, 2012 with three teachers. Today we give glory to God, apart from admission into all the arms of the nursery and primary schools, students have been admitted into all the arms of J.S.S 1, 2 and S. S 1, 2 classes.
+        </span>
+    </p>
+    <p>
+        <span>
+            Overcomer school is God's project. We thank God for giving it to us as a symbol of mercy in which he counted us worthy to be the care taker. On different occasions He sent messages to me and my wife about the project of running a school. God divinely ask us to start the school on the 7th September in year 2012 and since then He has been faithful to his covenant and promises. Overcomer schools is God's project which God uses Pastor Isaac Olakanmi Ogunyemi and Lady Evangelist Oluyemisi Ogunyemi to established.
+        </span>
+    </p>
+    <p>
+        <span>
+            The Nursery and Primary started with about fourteen pupils and the name of the head teacher we started with is Mrs Omoniyi Damilola Kehinde with two other teachers. The secondary arm started in the school are: to serve the society through education, lay solid foundation for greater achievements provide total and balanced education and to build students who are academically sound and morally upright.
+        </span>
+    </p>
+    <p>
+        <span>
+            To facilitate the attainment of these objectives the management and staff of the school: ensures conducive teaching. Learning environment, provides well equipped science laboratories maintaining standard home economics laboratory and well equipped computer lab ensures training and up to date retaining exercise for teachers. 
+        </span>
+    </p>
+    <p>
+        <span>
+            The school has grown to having secondary arm and to have school two on our permanent site at sharp corner near FERMA Ado-edition Road, Akure.
+        </span>
+    </p>
+    <p>
+        <span>
+            The Nursery and Primary schools were accredited on we usually observe our Biannual inter house sports. The school has advances technologically.
+        </span>
+    </p>
+    <p>
+        <span>
+            Parent comment <br />
+            school has played a good part in the life of my children morally and academically, I bless God for been part of these wonderful institution           
+        </span>
+    </p>
+</>
 
 export const schoolOverview = "Located in Akure, Nigeria, Overcomer Schools is a renowned educational institution dedicated to providing top-notch education from creche to senior secondary school levels. Founded on September 24, 2012, the school's mission is to offer exceptional education services, fostering excellence and superior academic performance."
 export const schoolVision = "Overcomer  School Is Dedicated To Building  Excellence  And Superior  Academic  Performance And  Creating  A Role Model  Future  Leaders"
@@ -192,6 +232,11 @@ export const testimonies = [
         testimony: "Our exceptional academic record boasts 70% of primary 6 students scoring impressively over 200 marks, demonstrating outstanding scholastic achievement and readiness for secondary education.",
         testifierName: 'Teacher',
         testifierRole: 'School Administrator'
+    },
+    {
+        testimony: "school has played a good part in the life of my children morally and academically, I bless God for been part of these wonderful institution",
+        testifierName: 'Parent',
+        testifierRole: ''
     },
     {
         testimony: "Notably, alumni from our basic schools excel as executives and leaders in their respective institutions, showcasing exceptional leadership skills, academic prowess and character development.",

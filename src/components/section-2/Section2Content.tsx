@@ -1,4 +1,4 @@
-import { certifiedTeachers, numberOfSchools, schoolName, yearsOld } from "@/data.tsx"
+import { certifiedTeachers, latestNewsSectionImage, numberOfSchools, schoolName, yearsOld } from "@/data.tsx"
 import { Button } from "../ui/button"
 
 const Section2Content = () => {
@@ -8,7 +8,7 @@ const Section2Content = () => {
         <div className="md:hidden absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 flex-align-center flex-col">
             <span className="raleway text-xs leading-[9.4px] md:text-base md:leading-4 p-[7px] md:p-3 underline bg-shkula-secondary text-schoolcom">Latest News</span>
             <figure className="w-60 h-[215px] bg-gray-400 border-4 border-white">
-                <img src="/section-2-image.png" className="w-full h-full object-cover object-center" />
+                <img src={"/" + latestNewsSectionImage} className="w-full h-full object-cover object-center" />
             </figure>
         </div>
 
@@ -85,7 +85,7 @@ function Content() {
         <div className=" pt-32 pb-10 px-3 md:pt-0 md:pb-0 md:px-0 flex gap-6 bg-shkula-primary border-4 border-t-white border-x-0 border-b-0">
             {/* section-2-image for desktop */}
             <figure className="hidden md:block w-[292px] bg-gray-400 self-stretch shrink-0">
-                <img src="/section-2-image.png" className="w-full h-full object-cover object-center" />
+                <img src={"/" + latestNewsSectionImage} className="w-full h-full object-cover object-center" />
             </figure>
 
             {/* section-2-content information */}
