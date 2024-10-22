@@ -16,7 +16,7 @@ export const schoolSocialMediaLinks = {
 export const certifiedTeachers = '50+'
 export const yearsOld = '12'
 export const numberOfSchools = '6'
-export const latestNewsSectionImage = 'OC-banner-image-5.webp' // section-2-image.png
+export const latestNewsSectionImage = 'P1-861.webp' // section-2-image.png
 
 export const schoolOverviewInParagraphs = <>
     <p>
