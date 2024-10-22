@@ -204,7 +204,7 @@ export const data2: d1[] = [
     // },
     {
             title: "World Book Day",
-            image: "P2-811.webp",
+            image: "/P2-811.webp",
             description: "Annual celebration promoting literacy, reading culture and language development among students."
         },
         // {
@@ -214,7 +214,7 @@ export const data2: d1[] = [
         // },
         {
             title: "Career Day",
-            image: "/P9.063.webp",
+            image: "/P9-063.webp",
             description: "Interactive sessions connecting students with professionals, exploring career paths and future opportunities."
         },
         {
