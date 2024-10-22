@@ -3,7 +3,7 @@ export const schoolLogo = 'schoolLogo.jpeg'
 export const schoolName = 'OVERCOMER SCHOOLS'
 export const schoolTagline = 'Moral And Academic  Excellence'
 export const schoolAddress = 'Ifesowapo / A. J Idajo community, opposite 2nd gate Igoba Akure. Overcomer Street @ Sharp Corner, beside FERMA, Ado Road Akure.'
-export const schoolPhoneNumber = ''
+export const schoolPhoneNumber = '08034342211'
 export const schoolEmail = 'overcomerglobalcol001@gmail.com'
 export const schoolSocialMediaLinks = {
     // ensure the social media names are in lowercase
@@ -214,7 +214,7 @@ export const data2: d1[] = [
         // },
         {
             title: "Career Day",
-            image: "/programs-B-img-2.jpeg",
+            image: "/P9.063.webp",
             description: "Interactive sessions connecting students with professionals, exploring career paths and future opportunities."
         },
         {
