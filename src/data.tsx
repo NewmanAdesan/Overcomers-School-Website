@@ -204,7 +204,7 @@ export const data2: d1[] = [
     // },
     {
             title: "World Book Day",
-            image: "/programs-B-img-1.jpeg",
+            image: "P2-811.webp",
             description: "Annual celebration promoting literacy, reading culture and language development among students."
         },
         // {
@@ -268,7 +268,7 @@ export const clubData = [
       {
         title: "Debate Club",
         desc: "Sharpening critical thinking, public speaking and teamwork skills through dynamic debates.",
-        image: "section-6-img-3.jpeg"
+        image: "P13-245.webp"
       },
       {
         title: "Sport Teams",
