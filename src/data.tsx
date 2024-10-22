@@ -3,8 +3,8 @@ export const schoolLogo = 'schoolLogo.jpeg'
 export const schoolName = 'OVERCOMER SCHOOLS'
 export const schoolTagline = 'Moral And Academic  Excellence'
 export const schoolAddress = 'Ifesowapo / A. J Idajo community, opposite 2nd gate Igoba Akure. Overcomer Street @ Sharp Corner, beside FERMA, Ado Road Akure.'
-export const schoolPhoneNumber = 'overcomerglobalcol001@gmail.com'
-export const schoolEmail = ''
+export const schoolPhoneNumber = ''
+export const schoolEmail = 'overcomerglobalcol001@gmail.com'
 export const schoolSocialMediaLinks = {
     // ensure the social media names are in lowercase
     instagram: "https://www.instagram.com/overcomerglobalcollege2024/",

@@ -1,4 +1,4 @@
-import { schoolLogo, schoolName } from "@/data"
+import { schoolLogo } from "@/data"
 // import ShkulaLogoWhite from "../ui/icons/ShkulaLogoWhite"
 import DesktopNavLinks from "./DesktopNavLinks"
 import MobileNavLinks from "./MobileNavLinks"
