@@ -273,7 +273,7 @@ export const clubData = [
       {
         title: "Sport Teams",
         desc: "Cultivating teamwork, discipline and physical fitness through soccer, basketball, gymnastics and track & field.",
-        image: "section-6-img-8.jpeg"
+        image: "P12-182.webp"
       },
       {
         title: "Excursion",
