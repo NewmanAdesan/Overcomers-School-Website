@@ -258,7 +258,7 @@ export const clubData = [
       {
         title: "Entrepreneurship Training",
         desc: "Empowering students to innovate, create and manage businesses, fostering financial literacy and entrepreneurial spirit.",
-        image: "section-6-img-1.jpeg"
+        image: "P14-696.jpg"
       },
       {
         title: "Computer Training",
