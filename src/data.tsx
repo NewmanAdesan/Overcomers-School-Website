@@ -219,7 +219,7 @@ export const data2: d1[] = [
         },
         {
             title: "Student Decide",
-            image: "/programs-B-img-3.jpeg",
+            image: "/P6-239.webp",
             description: "Yearly program empowering students to democratically elect their prefects, developing leadership skills."
         }
 ]
@@ -263,7 +263,7 @@ export const clubData = [
       {
         title: "Computer Training",
         desc: "Introduces basic coding and robotics concepts to young students through fun, age-appropriate games and activities. Develops problem-solving and analytical thinking skills.",
-        image: "section-6-img-2.jpeg"
+        image: "P10-417.webp"
       },
       {
         title: "Debate Club",
