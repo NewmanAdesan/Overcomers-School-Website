@@ -94,9 +94,9 @@ function Content() {
                 <p className="montserrat font-normal text-12px md:text-20px lg:text-24px mb-3.5 md:mb-8 lg:mb-11 text-white">Admission into {schoolName} for 2024/2025 session is in progress</p>
                 <div className="max-w-max mx-auto md:mx-0 flex flex-col md:flex-row items-center gap-3 md:gap-4 md2:gap-6 open-sans font-semibold text-xs md2:text-sm leading-[8px] md:leading-4 transition-all duration-500">
                     {/* button-1 */}
-                    <Button className="w-48 h-[30px] md:w-[212px] md2:w-[256px] md:h-14 lg:w-[312px] flex-center-center rounded-2xl md:rounded-32px bg-shkula-secondary md:bg-shkula-primary md:border md:border-white text-schoolcom md:text-white transition-all duration-500 hover:bg-white hover:text-shkula-secondary">Download Application Form</Button>
+                    <a href="#contact-section"><Button className="w-48 h-[30px] md:w-[212px] md2:w-[256px] md:h-14 lg:w-[312px] flex-center-center rounded-2xl md:rounded-32px bg-shkula-secondary md:bg-shkula-primary md:border md:border-white text-schoolcom md:text-white transition-all duration-500 hover:bg-white hover:text-shkula-secondary">Download Application Form</Button></a>
                     {/* button-2 */}
-                    <Button className="w-[93px] h-[30px] md:w-[120px] md2:w-[140px] md:h-14 lg:w-[210px] flex-center-center rounded-2xl md:rounded-32px bg-shkula-primary border-[0.51px] md:border border-shkula-secondary md:border-white text-white transition-all duration-500 hover:bg-white hover:text-shkula-secondary">Get in Touch</Button>
+                    <a href="#contact-section"><Button className="w-[93px] h-[30px] md:w-[120px] md2:w-[140px] md:h-14 lg:w-[210px] flex-center-center rounded-2xl md:rounded-32px bg-shkula-primary border-[0.51px] md:border border-shkula-secondary md:border-white text-white transition-all duration-500 hover:bg-white hover:text-shkula-secondary">Get in Touch</Button></a>
                 </div>
             </div>
         </div>

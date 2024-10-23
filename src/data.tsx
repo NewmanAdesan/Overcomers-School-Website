@@ -4,6 +4,7 @@ export const schoolName = 'OVERCOMER SCHOOLS'
 export const schoolTagline = 'Moral And Academic  Excellence'
 export const schoolAddress = 'Ifesowapo / A. J Idajo community, opposite 2nd gate Igoba Akure. Overcomer Street @ Sharp Corner, beside FERMA, Ado Road Akure.'
 export const schoolPhoneNumber = '08034342211'
+export const schoolPhoneNumber2 = '07031373787'
 export const schoolEmail = 'overcomerglobalcol001@gmail.com'
 export const schoolSocialMediaLinks = {
     // ensure the social media names are in lowercase
@@ -278,12 +279,12 @@ export const clubData = [
       {
         title: "Excursion",
         desc: "Exploring Nigeria's rich heritage: educational trips, cultural immersion and adventure.",
-        image: "section-6-img-9.jpeg"
+        image: "P11-213.webp"
       },
       {
         title: "Farming",
         desc: "Nurturing environmental awareness, responsibility and sustainability through gardening and agriculture.",
-        image: "section-6-img-10.jpeg"
+        image: "P10-051.webp"
       },
     // {
     //   title: "Art And Craft Club",
@@ -360,7 +361,7 @@ export const howToApplySectionContent = [
 
 
 
-  export const footerLinksData = [
+export const footerLinksData = [
     {
         title: "Product",
         links: [
@@ -418,3 +419,7 @@ export const howToApplySectionContent = [
         ]
     }
 ];
+
+
+
+export const shkulaOverview = "SHKULA revolutionizes education by empowering schools, teachers, students, and parents with innovative tools. Our comprehensive suite enhances school management, improves communication, and fosters a cohesive academic community. Join the movement, discover new possibilities, and shape the future of education with SHKULA."

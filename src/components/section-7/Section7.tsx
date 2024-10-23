@@ -51,7 +51,6 @@ function Content() {
                                 <Paragraph key={index}>
                                     {item}
                                 </Paragraph>
-
                             )
                         )
                     }
@@ -59,14 +58,18 @@ function Content() {
             </SpacingContainer>
 
             <SpacingContainer className="flex gap-2 md:gap-6 w-max mx-auto sm:mx-0">
-                <Button variant="none" size="none" className="rounded-32px bg-shkula-primary flex gap-1 md:gap-1.5 items-center py-2.5 md:py-5 px-5 md:px-[52px] text-white raleway text-xs sm:text-14-auto font-semibold" >
-                    <span>Apply Now</span>
-                    <CircleSVG fill="white" />
-                </Button>
-                <Button variant="none" size="none" className="rounded-32px bg-white flex gap-1 md:gap-1.5 items-center py-2.5 md:py-5 px-5 md:px-[52px] text-schoolcom raleway text-xs sm:text-14-auto font-semibold ring-1 ring-offset-0 ring-shkula-primary" >
-                    <span>Request Information</span>
-                    <CircleSVG fill="#313131" />
-                </Button>
+                <a href="#contact-section">
+                    <Button variant="none" size="none" className="rounded-32px bg-shkula-primary flex gap-1 md:gap-1.5 items-center py-2.5 md:py-5 px-5 md:px-[52px] text-white raleway text-xs sm:text-14-auto font-semibold" >
+                        <span>Apply Now</span>
+                        <CircleSVG fill="white" />
+                    </Button>
+                </a>
+                <a href="#contact-section">
+                    <Button variant="none" size="none" className="rounded-32px bg-white flex gap-1 md:gap-1.5 items-center py-2.5 md:py-5 px-5 md:px-[52px] text-schoolcom raleway text-xs sm:text-14-auto font-semibold ring-1 ring-offset-0 ring-shkula-primary" >
+                        <span>Request Information</span>
+                        <CircleSVG fill="#313131" />
+                    </Button>
+                </a>
             </SpacingContainer>
 
         </div>
