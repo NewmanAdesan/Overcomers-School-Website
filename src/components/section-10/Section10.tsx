@@ -1,3 +1,4 @@
+import { shkulaOverview } from "@/data"
 
 const Section10 = () => {
   return (
@@ -6,20 +7,24 @@ const Section10 = () => {
 
             {/* logo & description */}
             <div className="md:w-[60%]">
-                <figure className="w-max mx-auto mb-3 sm:mb-4 md:mx-0 md:mb-5">
-                    <img src="/ShkulaLogoWhite.png" alt="" className="w-24 sm:w-32 md:w-44 lg:w-52" />
-                </figure>
-                <p className="open-sans text-xs sm:text-sm md:text-base text-white">Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                <a href="https://shkula.com">
+                    <figure className="w-max mx-auto mb-3 sm:mb-4 md:mx-0 md:mb-5">
+                        <img src="/ShkulaLogoWhite.png" alt="" className="w-24 sm:w-32 md:w-44 lg:w-52" />
+                    </figure>
+                </a>
+                <p className="open-sans text-xs sm:text-sm md:text-base text-white">
+                    {shkulaOverview}
+                </p>
             </div>
 
             {/* download store buttons */}
             <div className="w-max mx-auto flex gap-7 items-center">
-                <button>
+                <a href="https://apps.apple.com/app/shkula-admin/id6692608157">
                     <img src="/google-play-btn.png" alt="" className="w-20 sm:w-28 lg:w-36" />
-                </button>
-                <button>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=org.foresightridge.shkula_admin&pli=1">
                     <img src="/apple-store-btn.png" alt="" className="w-24 sm:w-32 lg:w-44" />
-                </button>
+                </a>
             </div>
         </div>
     </section>
