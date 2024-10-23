@@ -42,8 +42,9 @@ type CardUIProps = {
 }
 function CardUI({title, desc, image}: CardUIProps) {
     return <div className={` ${styles['cardUiParent']} shadow-blur relative rounded-[10px] overflow-hidden w-[401px]`}>
-        <figure className="w-full h-[372px] md:h-[450px] lg:h-[535px] overflow-hidden">
+        <figure className="w-full h-[372px] md:h-[450px] lg:h-[535px] overflow-hidden relative">
             <img src={`/${image}`} alt="" className="w-full h-full object-center object-cover" loading="lazy" />
+            <div className={` ${styles['imageOverlay']} absolute inset-0 bg-black/25 transition-opacity duration-200`}></div>
         </figure>
         <div className={` ${styles['descContainer']} bg-white absolute bottom-0 w-full h-[167px] lg:h-[112px] rounded-[10px] px-2.5 flex items-center justify-center`}>
             <div className="flex flex-col gap-[5px] text-center">
@@ -102,14 +103,12 @@ function DesktopView() {
                   )
               }
           </swiper-container>
-          <div className="w-full flex justify-between absolute top-1/2 -translate-y-1/2 z-10">
-            <button onClick={() => handleClick("left")} className="size-[60px] rounded-full bg-[#F77E23] flex-center-center relative -translate-x-1/2">
-              <ChevronLeft size={30} color="white" />
-            </button>
-            <button onClick={() => handleClick("right")} className="size-[60px] rounded-full bg-[#F77E23] flex-center-center relative translate-x-6">
-              <ChevronRight size={30} color="white" />
-            </button>
-          </div>
+          <button onClick={() => handleClick("left")} className="size-[60px] rounded-full bg-[#F77E23] flex-center-center  absolute top-1/2 left-0 -translate-y-1/2 -translate-x-1/2 z-10">
+            <ChevronLeft size={30} color="white" />
+          </button>
+          <button onClick={() => handleClick("right")} className="size-[60px] rounded-full bg-[#F77E23] flex-center-center absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2 z-10">
+            <ChevronRight size={30} color="white" />
+          </button>
         </div>
     )
 }
