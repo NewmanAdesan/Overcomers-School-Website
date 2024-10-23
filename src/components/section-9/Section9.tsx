@@ -1,7 +1,7 @@
 import { SVGProps } from "react"
 import Banner1 from "../ui/Banner1"
 import { Mail, MapPin, Phone } from "lucide-react"
-import { schoolAddress, schoolEmail, schoolPhoneNumber, schoolSocialMediaLinks } from "@/data"
+import { schoolAddress, schoolEmail, schoolPhoneNumber, schoolPhoneNumber2, schoolSocialMediaLinks } from "@/data"
 import LinkedIn from "../ui/icons/LinkedIn"
 
 
@@ -25,7 +25,7 @@ export default Section9
 
 function Content() {
     return (
-        <div className="bg-white-1 rounded-[20px] drop-shadow-2xl shadow-md py-5 px-5 text-schoolcom flex flex-col items-center gap-3 sm:gap-6 md:gap-12">
+        <div className="bg-white-1 rounded-[20px] drop-shadow-2xl shadow-md pt-5 pb-8 px-5 text-schoolcom flex flex-col items-center gap-3 sm:gap-6 md:gap-12">
             <div className="flex flex-col gap-3 md:gap-0 items-center">
                 <h3 className="poppins text-2xl leading-9 font-medium md:text-48-auto">Get in touch</h3>
                 <ul className="flex gap-5 w-max">
@@ -72,6 +72,16 @@ function Content() {
                       }</span>
                 </li>
 
+                {/* school phone number 2 */}
+                <li className="flex gap-3">
+                    <Phone size={24} color="#4044A7" className="flex-shrink-0" />
+                    <span>{
+                        schoolPhoneNumber2.length === 0
+                        ? "Phone Number Not Available"  
+                        : schoolPhoneNumber2
+                      }</span>
+                </li>
+
                 {/* school email */}
                 <li className="flex gap-3">
                     <Mail size={24} color="#4044A7" className="flex-shrink-0" />
@@ -80,7 +90,6 @@ function Content() {
                       ? "Email Not Available"                       
                       : schoolEmail
                   }</span>
-
                 </li>
             </ul>
         </div>
