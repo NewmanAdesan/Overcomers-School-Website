@@ -16,7 +16,7 @@ const links = [
     },
     {
         text: "Testimonial",
-        id: 'testimonial-section'
+        id: 'testimonials-section'
     },
     {
         text: "Contact",

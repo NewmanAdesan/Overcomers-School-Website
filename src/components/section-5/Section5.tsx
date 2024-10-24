@@ -60,7 +60,7 @@ const Section5Content = () => {
                     (item, index) => (
                         <swiper-slide key={index}>
                             <div className="w-full px-4 md:px-8 py-2 relative">
-                                <TestimonyCard handleClick={handleClick} testimony={item.testimony} testifierName={item.testifierName} testifierRole={item.testifierRole} />
+                                <TestimonyCard handleClick={handleClick} testimony={item.testimony} testifierName={item.testifierName} testifierRole={item.testifierRole} testifierImage={item.testifierImage} />
                             </div>
                         </swiper-slide>
                     )
@@ -75,12 +75,13 @@ type TestimonyCardProps = {
     testimony: string,
     testifierName: string,
     testifierRole: string,
+    testifierImage: string,
 }
-const TestimonyCard = ({handleClick, testimony, testifierName, testifierRole}: TestimonyCardProps) => {
+const TestimonyCard = ({handleClick, testimony, testifierName, testifierRole, testifierImage}: TestimonyCardProps) => {
     return (
         <div className="w-full mx-auto space-y-2 max-w-[311px] md:w-4/5 md:max-w-[946px] pb-20">
                 <Title />
-                <Content handleClick={handleClick} testimony={testimony} testifierName={testifierName} testifierRole={testifierRole} />
+                <Content handleClick={handleClick} testimony={testimony} testifierName={testifierName} testifierRole={testifierRole} testifierImage={testifierImage} />
         </div>
     )
 }
@@ -100,8 +101,9 @@ type ContentProps = {
     testimony: string,
     testifierName: string,
     testifierRole: string,
+    testifierImage: string,
 }
-const Content = ({handleClick, testimony, testifierName, testifierRole}: ContentProps) => {
+const Content = ({handleClick, testimony, testifierName, testifierRole, testifierImage}: ContentProps) => {
     return (
         <article className="w-[calc(100%-16px)] bg-[#FAFAFA] rounded-lg shadow-[0px_28px_59px_0px_rgba(21,21,21,0.15)] p-3 pb-8 flex flex-col xxxs:flex-row gap-5 md:gap-14 relative md:pr-9 md:pt-8 md3:pt-11 md:pl-12 md3:pl-16 md:pb-16 md3:pb-10">
             <div className="md:w-[calc(50%-28px)]">
@@ -117,15 +119,15 @@ const Content = ({handleClick, testimony, testifierName, testifierRole}: Content
 
             <div className="flex md:opacity-0 flex-col flex-shrink-0 items-center text-center relative -top-8">
                 <figure className="rounded-lg overflow-hidden relative w-full max-w-36 aspect-[125/187] bg-black/50">
-                    {/* <img src="/section-5-img-1.jpeg" alt="" className="w-full h-full object-cover object-center" loading='lazy' /> */}
+                    {testifierImage && <img src={`/${testifierImage}`} alt="" className="w-full h-full object-cover object-center" loading='lazy' />}   
                     <div className="absolute inset-0 bg-[rgba(62,102,223,0.2)]"></div>
                 </figure>
-                <span className="w-full line-clamp-1 open-sans font-semibold text-xs md:text-lg text-black">Oladayo Deborah</span>
-                <span className="w-full line-clamp-1 open-sans text-10-auto text-[#808080]">Primary 6 Student</span>
+                <span className="w-full line-clamp-1 open-sans font-semibold text-xs md:text-lg text-black">{testifierName}</span>
+                <span className="w-full line-clamp-1 open-sans text-10-auto text-[#808080] ">{testifierRole}</span>
             </div>
 
             <figure className='hidden md:block absolute md:-top-[60px] md3:-top-[100px] right-9 w-[calc(45%-28px)] aspect-[127/190] rounded-3xl overflow-hidden bg-black/50'>
-                {/* <img src="/section-5-img-1.jpeg" alt="" className="w-full h-full object-cover object-center" loading='lazy' /> */}
+                {testifierImage && <img src={`/${testifierImage}`} alt="" className="w-full h-full object-cover object-center" loading='lazy' />}
                 <div className="absolute inset-0 bg-[rgba(62,102,223,0.2)]"></div>
             </figure>
 

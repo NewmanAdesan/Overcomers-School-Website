@@ -227,27 +227,36 @@ export const data2: d1[] = [
 
 
 
-
 export const testimonies = [
+    {
+        testimony: " Overcomer is a wonderful school. I love our teachers and instructors. They teach us with so much passion. I am sure my future is bright, because I attend Overcomer Model School Akure.",
+        testifierName: 'Oluwakorede Goodness',
+        testifierRole: 'Primary 2 Student',
+        testifierImage: 'oluwakoredegoodness_testimony_image.webp',
+    },
     {
         testimony: "Our exceptional academic record boasts 70% of primary 6 students scoring impressively over 200 marks, demonstrating outstanding scholastic achievement and readiness for secondary education.",
         testifierName: 'Teacher',
-        testifierRole: 'School Administrator'
+        testifierRole: '',
+        testifierImage: 'testifier-teacher-1.webp',
     },
     {
         testimony: "school has played a good part in the life of my children morally and academically, I bless God for been part of these wonderful institution",
-        testifierName: 'Parent',
-        testifierRole: ''
+        testifierName: 'Teacher',
+        testifierRole: '',
+        testifierImage: 'testifier-teacher-1.webp',
     },
     {
         testimony: "Notably, alumni from our basic schools excel as executives and leaders in their respective institutions, showcasing exceptional leadership skills, academic prowess and character development.",
         testifierName: 'Teacher',
-        testifierRole: 'School Administrator'
+        testifierRole: '',
+        testifierImage: 'testifier-teacher-1.webp',
     },
     {
         testimony: "Overcomer School' secondary graduates consistently secure admissions into prestigious universities and esteemed higher institutions, paving pathways to future success.",
         testifierName: 'Teacher',
-        testifierRole: 'School Administrator'
+        testifierRole: '',
+        testifierImage: 'testifier-teacher-1.webp',
     },
 ]
 
