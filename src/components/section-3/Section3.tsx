@@ -6,7 +6,7 @@ import { aboutUsComponent2Data, aboutUsImages, schoolOverviewInParagraphs } from
 
 const Section3 = () => {
   return (
-    <section id="about-us-section" className="mycontainer1 text-schoolcom md:-mt-16 lg:mt-0">
+    <section id="about-us-section" className="mycontainer1 text-schoolcom">
         <div className="flex flex-col gap-7">
             <Content1 />
             <Content2 />
