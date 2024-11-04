@@ -1,5 +1,5 @@
 import { AlignJustify } from "lucide-react"
-import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../../ui/sheet";
 import styles from "./MobileNavLinks.module.css"
 import { useState } from "react";
 

@@ -1,7 +1,7 @@
 import { schoolAddress, schoolName, schoolTagline } from "@/data.tsx"
-import { Button } from "../ui/button"
-import DesktopCurvyDash from "../ui/icons/DesktopCurvyDash"
-import MobileCurvyDash from "../ui/icons/MobileCurvyDash"
+import { Button } from "../../ui/button"
+import DesktopCurvyDash from "../../ui/icons/DesktopCurvyDash"
+import MobileCurvyDash from "../../ui/icons/MobileCurvyDash"
 import styles from "./HeroContent.module.css"
 
 export const _schoolName = '[School&nbsp;Name]'
