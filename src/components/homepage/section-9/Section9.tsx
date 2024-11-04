@@ -1,8 +1,8 @@
 import { SVGProps } from "react"
-import Banner1 from "../ui/Banner1"
 import { Mail, MapPin, Phone } from "lucide-react"
 import { schoolAddress, schoolEmail, schoolPhoneNumber, schoolPhoneNumber2, schoolSocialMediaLinks } from "@/data"
-import LinkedIn from "../ui/icons/LinkedIn"
+import Banner1 from "@/components/ui/Banner1"
+import LinkedIn from "@/components/ui/icons/LinkedIn"
 
 
 const bannerContent = <span>Contact{' '}Us</span>

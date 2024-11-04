@@ -1,7 +1,8 @@
 import { ArrowRight } from "lucide-react"
-import { Button } from "../ui/button"
 import { d1, data1, data2 } from "@/data"
-import SpacingContainer from "../ui/SpacingContainer"
+import { Button } from "@/components/ui/button"
+import SpacingContainer from "@/components/ui/SpacingContainer"
+
 
 
 const Section4 = () => {

@@ -1,5 +1,5 @@
+import { Button } from "@/components/ui/button"
 import { certifiedTeachers, latestNewsSectionImage, numberOfSchools, schoolName, yearsOld } from "@/data.tsx"
-import { Button } from "../ui/button"
 
 const Section2Content = () => {
   return (

@@ -1,8 +1,8 @@
 import { ReactNode } from "react"
-import SpacingContainer from "../ui/SpacingContainer"
-import { Button } from "../ui/button"
-import Banner1 from "../ui/Banner1"
 import { admissionsSectionIntro, howToApplySectionContent } from "@/data"
+import Banner1 from "@/components/ui/Banner1"
+import { Button } from "@/components/ui/button"
+import SpacingContainer from "@/components/ui/SpacingContainer"
 
 const bannerContent = (
     <span>

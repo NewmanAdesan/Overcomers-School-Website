@@ -1,8 +1,8 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import SpacingContainer from "../ui/SpacingContainer";
 import { useEffect, useRef } from "react";
 import { clubData } from "@/data";
 import styles from "./Section6Content.module.css"
+import SpacingContainer from "@/components/ui/SpacingContainer";
 
 
 

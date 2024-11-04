@@ -1,15 +1,15 @@
 import Section1 from "./components/homepage/section-1/Section1";
-import Section10 from "./components/section-10/Section10";
-import Section11 from "./components/section-11/Section11";
-import Section2 from "./components/section-2/Section2";
+import Section10 from "./components/homepage/section-10/Section10";
+import Section11 from "./components/homepage/section-11/Section11";
+import Section2 from "./components/homepage/section-2/Section2";
 import Section2B from "./components/homepage/section-2B/Section2B";
 import Section3 from "./components/homepage/section-3/Section3";
-import Section4 from "./components/section-4/Section4";
-import Section5 from "./components/section-5/Section5";
-import Section6 from "./components/section-6/Section6";
-import Section7 from "./components/section-7/Section7";
-import Section8 from "./components/section-8/Section8";
-import Section9 from "./components/section-9/Section9";
+import Section4 from "./components/homepage/section-4/Section4";
+import Section5 from "./components/homepage/section-5/Section5";
+import Section6 from "./components/homepage/section-6/Section6";
+import Section7 from "./components/homepage/section-7/Section7";
+import Section8 from "./components/homepage/section-8/Section8";
+import Section9 from "./components/homepage/section-9/Section9";
 
 
 

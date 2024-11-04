@@ -1,4 +1,4 @@
-import SpacingContainer from "../ui/SpacingContainer"
+import SpacingContainer from "../../ui/SpacingContainer"
 import Section6Content from "./Section6Content"
 
 

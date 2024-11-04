@@ -1,7 +1,7 @@
 import { useState } from "react"
-import { Icon1 } from "../../ui/icons/Icon1"
-import { Line } from "../../ui/icons/Line"
 import { aboutUsComponent2Data, aboutUsImages, schoolOverviewInParagraphs } from "@/data.tsx"
+import { Line } from "@/components/ui/icons/Line"
+import { Icon1 } from "@/components/ui/icons/Icon1"
 
 
 const Section3 = () => {

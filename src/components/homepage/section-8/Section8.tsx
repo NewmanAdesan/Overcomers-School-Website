@@ -1,4 +1,5 @@
-import SpacingContainer from "../ui/SpacingContainer"
+
+import SpacingContainer from "@/components/ui/SpacingContainer"
 import Section8Content from "./Section8Content"
 
 

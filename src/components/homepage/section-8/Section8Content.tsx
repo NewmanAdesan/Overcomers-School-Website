@@ -1,8 +1,9 @@
 
-import Facebook from "../ui/icons/Facebook";
-import LinkedIn from "../ui/icons/LinkedIn";
-import Twitter from "../ui/icons/Twitter";
+
+import Facebook from "@/components/ui/icons/Facebook";
 import styles from "./Section8Content.module.css"
+import LinkedIn from "@/components/ui/icons/LinkedIn";
+import Twitter from "@/components/ui/icons/Twitter";
 
 
 const data = [
