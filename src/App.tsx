@@ -2,6 +2,7 @@ import Section1 from "./components/section-1/Section1";
 import Section10 from "./components/section-10/Section10";
 import Section11 from "./components/section-11/Section11";
 import Section2 from "./components/section-2/Section2";
+import Section2B from "./components/section-2B/Section2B";
 import Section3 from "./components/section-3/Section3";
 import Section4 from "./components/section-4/Section4";
 import Section5 from "./components/section-5/Section5";
@@ -19,6 +20,7 @@ function App() {
     <>
       <Section1 />    {/* Banner Section */}
       <Section2 />    {/* Latest News Section */}
+      <Section2B />   {/*  */}
       <div className="mb-6 md:mb-12">
         <Section3 />  {/* About Us Section */}
       </div>
