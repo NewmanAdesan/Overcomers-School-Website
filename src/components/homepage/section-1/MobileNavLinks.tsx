@@ -1,7 +1,8 @@
 import { AlignJustify } from "lucide-react"
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "../../ui/sheet";
 import styles from "./MobileNavLinks.module.css"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 
 const links = [
@@ -28,6 +29,17 @@ const links = [
 ];
 
 const MobileNavLinks = () => {
+    const location = useLocation();
+
+    useEffect(() => {
+      if (location.hash) {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, [location]);
+    
     return (
         <Sheet>
             <SheetTrigger asChild>
